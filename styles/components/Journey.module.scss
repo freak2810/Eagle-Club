@@ -1,0 +1,61 @@
+@import '../abstracts/variables';
+@import '../layout/container.module';
+
+.journey {
+  padding: 9rem;
+  width: 100%;
+  margin: auto;
+  background-color: $color-4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  
+
+  h1 {
+    font-size: 7rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+  }
+
+  @media only screen and (max-width: 768px) {
+
+  }
+
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+}
+
+.left_stripe{
+  position: absolute;
+    left: 0;
+    bottom: -60px;
+    height: 250px;
+}
+
+.right_stripe{
+  position: absolute;
+    right: 0;
+    top: -60px;
+    height: 250px;
+}
+
+@media screen and(max-width:768px){
+  .right_stripe,.left_stripe{
+    display: none;
+  }
+}
+
+@media screen and(max-width:1300px){
+  .right_stripe,.left_stripe{
+    height: 200px;
+  }
+}

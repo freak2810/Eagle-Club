@@ -1,0 +1,55 @@
+.container {
+  padding: 0 20px;
+  background-color: black;
+  color: white;
+  z-index: 100;
+  width: 100%;
+  position: absolute;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  position: relative;
+
+}
+
+.logo {
+  position: absolute;
+  left: 5%;
+  top: 0;
+}
+
+.item {
+  font-size: 1.5rem;
+  margin-right: 40px;
+  padding: 5px 0;
+}
+
+.items {
+  display: none;
+}
+
+.icon {
+  color: white;
+  font-size: 15px;
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and(min-width: 768px) {
+  .icon {
+    display: none;
+  }
+  .items {
+    display: block;
+  }
+  .nav {
+    justify-content: center;
+  }
+}

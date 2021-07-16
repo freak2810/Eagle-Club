@@ -1,0 +1,33 @@
+@import '../abstracts/variables';
+
+.container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
+.circle_container{
+    position: relative;
+}
+.year{
+    position: absolute;
+    font-size: 22px;
+    color: #dd9c12;
+    top: -30px;
+}
+
+.circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid $primary;
+    background-color: $background-color;
+}
+
+.line{
+    height: 3px;
+    width: 400px;
+    background-color: $primary;
+}

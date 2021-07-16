@@ -1,0 +1,23 @@
+@import '../abstracts/variables';
+@import '../layout/container.module';
+
+.lifeJourney {
+  @extend .container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .topSection {
+    h1 {
+      font-size: 7rem;
+      font-weight: 600;
+      color: $primary;
+    }
+
+    p {
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+  }
+
+}

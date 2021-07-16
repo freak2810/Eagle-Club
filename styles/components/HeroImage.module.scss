@@ -1,0 +1,47 @@
+@import '../abstracts/variables';
+
+.heroImage {
+  height: 550px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  z-index: 1;
+
+  .border {
+    height: 100%;
+    width: 100%;
+    border: 5px solid $text;
+    position: absolute;
+    transform: translate(10px, -10px);
+    z-index: 2;
+
+    //transform: translate(1.5px,1.5px);
+  }
+
+  @media only screen and (max-width: 768px) {
+    top: 40%;
+    right: 5%;
+    transform: translate(0, -40%);
+  }
+
+  @media only screen and (max-width: 576px) {
+
+    height: 430px;
+    width: 100vw;
+    max-width: 400px;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%, 0);
+
+    .border {
+      transform: translate(5rem, -5rem);
+      z-index: 2;
+    }
+  }
+
+}
+
+
+
